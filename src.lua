@@ -50,8 +50,8 @@ local ESP_SETTINGS = {
 
 local function isEnemy(plr)
 	return plr.Character
-		and lplr.Character
-		and plr.Character.Parent ~= lplr.Character.Parent
+		and localPlayer.Character
+		and plr.Character.Parent ~= localPlayer.Character.Parent
 end
 
 local function create(class, properties)
